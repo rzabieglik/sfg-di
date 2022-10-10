@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 @Controller
 public class I18nController {
-    public final GreetingService greetingService;
+    private  final GreetingService greetingService;
 
     public I18nController(@Qualifier("i18nService") GreetingService greetingService) {
         this.greetingService = greetingService;
